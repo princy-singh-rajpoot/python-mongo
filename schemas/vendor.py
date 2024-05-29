@@ -1,13 +1,15 @@
 def vendorEntity(item) -> dict:
     return {
         "id": str(item["_id"]),
-        "name": item["name"],
-        "email": item["email"],
-        "password": item["password"]
+        "contact_details": item["contact_details"],
+        "address": item["address"],
+        "vendor_code": item["vendor_code"],
+        "on_time_delivery_rate": item["on_time_delivery_rate"],
+        "quality_rating_avg": item["quality_rating_avg"],
+        "fulfillment_rate": item["fulfillment_rate"],
     }
 
 def serializelist(entity) -> list:
-    # return [serializeDict(item) for item in entity]
     item = []
     for i in entity:
         serialised_data = serializeDict(i)
