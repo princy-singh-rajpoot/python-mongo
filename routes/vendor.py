@@ -19,7 +19,7 @@ async def create_vendor(vendor: Vendor):
     conn.local.vendor.insert_one(dict(vendor))
     return serializelist(conn.local.vendor.find())
 
-@vendor.put('/{id}')
+@vendor.patch('/{id}')
 async def update_vendors(id,vendor:Vendor):
     conn.local.vendor.find_one_and_update({"_id":ObjectId(id)},{"$set":dict(vendor)})
     return serializeDict(conn.local.vendor.find_one({"_id":ObjectId(id)}))
