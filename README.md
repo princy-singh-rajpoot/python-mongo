@@ -50,12 +50,12 @@ This project demonstrates CRUD (Create, Read, Update, Delete) operations on a Ve
 
 ## API Endpoints
 
-- **Create Vendor**: `POST /vendors/`
+- **Create Vendor**: `POST /vendor/`
 
-- **Read All Vendors**: `GET /vendors/`
+- **Read All Vendors**: `GET /vendor/`
 
-- **Read Single Vendor**: `GET /vendors/{vendor_id}`
+- **Read Single Vendor**: `GET /vendor/{vendor_id}`
 
-- **Update Vendor**: `PATCH /vendors/{vendor_id}`
+- **Update Vendor**: `PATCH /vendor/{vendor_id}`
 
-- **Delete Vendor**: `DELETE /vendors/{vendor_id}`
+- **Delete Vendor**: `DELETE /vendor/{vendor_id}`
